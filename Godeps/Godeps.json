@@ -1,0 +1,64 @@
+{
+	"ImportPath": "github.com/alexandervantrijffel/flitsmeisterbot",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Mparaiso/lodash-go",
+			"Rev": "3b0d20ef4fa15e59c45c5a7a20872c4409e74e49"
+		},
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.11.5-46-g5e5dc89",
+			"Rev": "5e5dc898656f695e2a086b8e12559febbfc01562"
+		},
+		{
+			"ImportPath": "github.com/alexandervantrijffel/go-utilities/filecopier",
+			"Rev": "59eefd69c76fca74e902cf73b5bff8401dead265"
+		},
+		{
+			"ImportPath": "github.com/davecgh/go-spew/spew",
+			"Comment": "v1.1.0",
+			"Rev": "346938d642f2ec3594ed81d874461961cd0faa76"
+		},
+		{
+			"ImportPath": "github.com/multiplay/go-slack",
+			"Rev": "113b4162452324ecc14996208cf30f336d6a27ba"
+		},
+		{
+			"ImportPath": "github.com/multiplay/go-slack/chat",
+			"Rev": "113b4162452324ecc14996208cf30f336d6a27ba"
+		},
+		{
+			"ImportPath": "github.com/multiplay/go-slack/lrhook",
+			"Rev": "113b4162452324ecc14996208cf30f336d6a27ba"
+		},
+		{
+			"ImportPath": "github.com/multiplay/go-slack/webhook",
+			"Rev": "113b4162452324ecc14996208cf30f336d6a27ba"
+		},
+		{
+			"ImportPath": "github.com/pkg/errors",
+			"Comment": "v0.8.0-5-gc605e28",
+			"Rev": "c605e284fe17294bda444b34710735b29d1a9d90"
+		},
+		{
+			"ImportPath": "github.com/pmezard/go-difflib/difflib",
+			"Comment": "v1.0.0",
+			"Rev": "792786c7400a136282c1664665ae0a8db921c6c2"
+		},
+		{
+			"ImportPath": "github.com/stretchr/testify/assert",
+			"Comment": "v1.1.4-27-g4d4bfba",
+			"Rev": "4d4bfba8f1d1027c4fdbe371823030df51419987"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "075e574b89e4c2d22f2286a7e2b919519c6f3547"
+		},
+		{
+			"ImportPath": "golang.org/x/time/rate",
+			"Rev": "8be79e1e0910c292df4e79c241bb7e8f7e725959"
+		}
+	]
+}

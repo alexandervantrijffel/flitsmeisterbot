@@ -1,8 +1,9 @@
 package slacklogger
 
 import (
-	"0local/alexandervantrijffel/flitsmeisterbot/flags"
 	"os"
+
+	"github.com/alexandervantrijffel/flitsmeisterbot/flags"
 
 	log "github.com/Sirupsen/logrus"
 	"github.com/multiplay/go-slack/chat"

@@ -1,9 +1,11 @@
 package main
 
 import (
-	"0local/alexandervantrijffel/flitsmeisterbot/logger"
-	"0local/alexandervantrijffel/flitsmeisterbot/slacklogger"
 	"runtime/debug"
+
+	"github.com/alexandervantrijffel/flitsmeisterbot/slacklogger"
+
+	"github.com/alexandervantrijffel/flitsmeisterbot/logger"
 
 	"github.com/alexandervantrijffel/go-utilities/filecopier"
 )

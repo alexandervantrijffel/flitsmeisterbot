@@ -1,11 +1,12 @@
 package logger
 
 import (
-	"0local/alexandervantrijffel/flitsmeisterbot/slacklogger"
 	"fmt"
 	"os"
 
-	"github.com//flitsmeisterbot/flags"
+	"github.com/alexandervantrijffel/flitsmeisterbot/slacklogger"
+
+	"github.com/alexandervantrijffel/flitsmeisterbot/flags"
 
 	log "github.com/Sirupsen/logrus"
 )
