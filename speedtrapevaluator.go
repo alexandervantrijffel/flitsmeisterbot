@@ -43,7 +43,7 @@ func reportNewSpeedtraps(alertForRoads []string, speedtraps []speedtrap, previou
 		In(speedtraps).
 		Filter(func(speedtrap speedtrap) bool {
 			isPreferred, _ := lo.IndexOf(alertForRoads, speedtrap.road, 0)
-			wasInPrevious, _ := lo.IndexOf(previousSpeedtraps, speedtrap, 0)
+			wasInPrevious, _ := lo.IndexOf(previousSpeedtraps, speedtrap.road, 0)
 			return isPreferred != -1 && wasInPrevious == -1
 		}).
 		Out(&newSpeedtraps)
