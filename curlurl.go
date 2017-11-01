@@ -1,7 +1,9 @@
 package main
 
 import (
+	"compress/gzip"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -46,8 +48,16 @@ func getRequestAsString(url string, headers map[string]string) string {
 		panic(fmt.Sprintf("Did not receive 200 status code for url %s. Received: %d %s", url, resp.StatusCode, resp.Status))
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
-	check(err)
+	// decompress if we got gzip data
+	var reader io.ReadCloser
+	switch resp.Header.Get("Content-Encoding") {
+	case "gzip":
+		reader, err = gzip.NewReader(resp.Body)
+		defer reader.Close()
+	default:
+		reader = resp.Body
+	}
 
+	body, err := ioutil.ReadAll(reader)
 	return string(body)
 }
